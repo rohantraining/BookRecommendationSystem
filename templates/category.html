@@ -1,0 +1,144 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<body style="background-color:rgb(255, 255, 255)">
+
+  <nav class="navbar" style="background-color:#333">
+      <img src="https://github.com/Sem6-Mp/Book_recomm/blob/main/templates/cartoon-bookworm-vector-removebg-preview.png?raw=true" style="float: left" height="54px" width="57px">
+           
+        <label class="navbar-brand" style="text-align: center; position: relative; ;right: 525px; color: beige; font-family: cursive; font-size: 30px;">Book Worm</label>
+     
+
+  </nav>
+  {% if message  %}
+    <div class="alert alert-secondary" role="alert">
+        <p>{{ message }}</p>
+    </div>
+{% endif %}
+<style>
+        .card {
+    /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 3%;
+        
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Add some padding inside the card container */
+    .container {
+        padding: 2px 100px;
+        width: 80%;
+       float: left;
+       margin-left: 110px;
+       
+    }
+
+</style>
+<body >
+    
+<div class="container ">   
+    <div class="row">
+        <div class="col-xs-2 col-md-4" style="margin-top:50px ">
+        <div class="card" onclick="window.location.href='/new'">
+            <br>
+            <div class="card-body">
+                <center><img class="card-img-top" src="https://github.com/Sem6-Mp/Book_recomm/blob/main/templates/Frame%202.png?raw=true" height="350px" ></center>
+            <br>
+                
+                    
+                <p style="text-align: center;">New Books</p>
+            
+                <br>
+           
+            </div>
+        </div>
+        </div>
+
+        
+        <div class=" col-xs-4 col-md-4" style="margin-top:50px;">
+        <div class="card" onclick="window.location.href='/literature_fiction'">
+            <br>
+            <div class="card-body">
+                <center><img class="card-img-top" height="350px" src="https://th.bing.com/th/id/OIP.utR8Qea6MWxK3goOQ94JIAHaMI?pid=ImgDet&w=500&h=819&rs=1" ></center>
+            <br>
+                
+                <p style="text-align: center;">Literature Fiction</p>
+            
+                <br>
+         
+            </div>
+        </div>
+    </div>
+
+    <div class=" col-xs-6 col-md-4" style="margin-top:50px ">
+        <div class="card" onclick="window.location.href='/romance'">
+            <br>
+            <div class="card-body">
+                <center><img class="card-img-top" height="350px" src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781451687590/love-story-9781451687590_hr.jpg" ></center>
+            <br>
+                
+                <p style="text-align: center;">Romance</p>
+            
+                <br>
+        
+            </div>
+        </div>
+    </div>
+        
+    </div>
+        <br>
+        <br>
+    <div class="row">
+        <div class="col-xs-2 col-md-4" style="margin-top:50px;">
+        <div class="card" onclick="window.location.href='/mystery_triller'">
+            <br>
+            <div class="card-body">
+                <center><img class="card-img-top" height="350px" src="https://th.bing.com/th/id/OIP.Pv1cSaXItihcCWxToOxOqgHaLH?pid=ImgDet&w=600&h=900&rs=1" ></center>
+            <br>
+                
+                <p style="text-align: center;">Mystery Triller</p>
+            
+                <br>
+        
+            </div>
+        </div>
+    </div>
+        <br>
+        <div class="col-xs-4 col-md-4" style="margin-top:50px ">
+        <div class="card" onclick="window.location.href='/manga'">
+            <br>
+            <div class="card-body">
+                <center><img class="card-img-top"  height="350px" src="https://i.pinimg.com/originals/7f/ea/00/7fea00bb7df422b882732ec8311a25d5.jpg" ></center>
+            <br>
+            
+                <p style="text-align: center;">Manga</p>
+            
+                <br>
+         
+            </div>
+        </div>
+    </div>
+        <br>
+        <div class="col-xs-6 col-md-4" style="margin-top:50px ;">
+        <div class="card" onclick="window.location.href='/engineering'">
+            <br>
+            <div class="card-body">
+                <center><img class="card-img-top" height="350px" src="https://i.thenile.io/r1000/9781847976796.jpg?r=5e61dbde1dccd"></center>
+            <br>
+               
+                <p style="text-align: center;">Engineering Books</p>
+            
+                <br>
+         
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+ 
+</body>
